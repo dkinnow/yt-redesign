@@ -1,1 +1,26 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+body {
+  background: #FFFFFF;
+  margin: 0;
+  font-family: "Mulish";
+}
+
+.header {
+  padding: 1.5em;
+}
+
+.container {
+  display: flex;
+  place-content: space-between;
+}
+.container #logo, .container #search {
+  width: 200%;
+}
+.container #avatar {
+  width: 25%;
+}
+.container ul {
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+}/*# sourceMappingURL=main.css.map */
