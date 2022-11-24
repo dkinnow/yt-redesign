@@ -1,26 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
-body {
-  background: #FFFFFF;
+body,
+* {
+  background: #ffffff;
   margin: 0;
   font-family: "Mulish";
 }
 
-.header {
-  padding: 1.5em;
+.wrapper {
+  padding: 0.75em 1em 0em 1em;
+  background: rgb(255, 255, 255);
 }
 
-.container {
+.header {
+  display: flex;
+  flex-direction: row;
+  place-content: space-between;
+  justify-content: space-between;
+}
+.header .logo-wrap {
+  width: 116px;
+  height: 30px;
+}
+.header .logo {
+  padding: 0 0 0 0em;
+}
+.header .header-right {
+  width: 72px;
+  height: 25px;
+  display: flex;
+  place-content: space-between;
+  align-items: center;
+}
+.header .search-button {
+  border: none;
+  background: url("../assets/icons/search.svg") no-repeat;
+  background-size: cover;
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+}
+.header .avatar-button {
+  padding-left: 0.08em;
+  border: none;
+  background: url("../assets/img/avatar.png") no-repeat;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.videos-wrapper {
+  padding-top: 0em;
+}
+.videos-wrapper .videos-list {
+  padding: 0em 0.7em 0em 0em;
+  height: 100%;
+  list-style-type: none;
+}
+.videos-wrapper h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.videos-wrapper .video-item {
+  margin-top: 1em;
+  width: 288px;
+  height: 198px;
+}
+.videos-wrapper .video-item span {
+  color: #c2c2c2;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  word-spacing: 0.1rem;
+}
+.videos-wrapper .video-item .video-desc {
+  margin-top: 0.35em;
   display: flex;
   place-content: space-between;
 }
-.container #logo, .container #search {
-  width: 200%;
+.videos-wrapper .home-video {
+  width: 100%;
+  margin-bottom: 8px;
+  width: 288px;
+  height: 150px;
 }
-.container #avatar {
-  width: 25%;
-}
-.container ul {
-  margin: 0;
-  display: flex;
-  list-style-type: none;
+.videos-wrapper .home-video img {
+  width: 288px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
 }/*# sourceMappingURL=main.css.map */
