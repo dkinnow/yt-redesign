@@ -11,7 +11,7 @@
 
 <body>
     <div class="wrapper">
-        <div class="header">
+        <header class="header">
             <div class="logo-wrap">
                 <a href="#">
                     <img class="logo" src="/assets/icons/youtube.svg" alt="youtube">
@@ -21,18 +21,21 @@
                 <button class="search-button"></button>
                 <button class="avatar-button"></button>
             </div>
-        </div>
+        </header>
 
-        <section class="videos-wrapper">
+        <main class="videos-wrapper">
             <ul class="videos-list">
 
                 <li class="video-item">
                     <div class="home-video">
-                        <img src="/assets/img/home1.png">
+
+
+                        <img class="video-thumb" src="/assets/img/home1.png">
+                        <div class="time">4:15</div>
                     </div>
                     <h2>A Brief History Of Creation</h2>
                     <div class="video-desc">
-                        <span>80k views · 3 days ago</span>
+                        <span>80k views  ·  3 days ago</span>
                         <span>Dollie Blair</span>
                     </div>
                 </li>
@@ -40,10 +43,11 @@
                 <li class="video-item">
                     <div class="home-video">
                         <img src="/assets/img/home2.png">
+                        <div class="time">8:00</div>
                     </div>
                     <h2>Selecting The Right Hotel</h2>
                     <div class="video-desc">
-                        <span>123k views · 1 month ago</span>
+                        <span>123k views · 1 months ago</span>
                         <span>Dollie Blair</span>
                     </div>
                 </li>
@@ -51,6 +55,7 @@
                 <li class="video-item">
                     <div class="home-video">
                         <img src="/assets/img/home3.png">
+                        <div class="time">5:32</div>
                     </div>
                     <h2>Asteroids</h2>
                     <div class="video-desc">
@@ -62,16 +67,33 @@
                 <li class="video-item">
                     <div class="home-video">
                         <img src="/assets/img/home4.png">
+                        <div class="time">6:40</div>
                     </div>
                     <h2>Telescopes 101</h2>
                     <div class="video-desc">
-                        <span>11k views · 6 month ago</span>
+                        <span>11k views · 6 months ago</span>
                         <span>Dollie Blair</span>
                     </div>
                 </li>
 
             </ul>
-        </section>
+        </main>
+        <footer>
+            <ul class="footer-nav">
+            <li>
+                Home
+            </li>
+            <li>
+                Trending
+            </li>
+            <li>
+                Subscriptions
+            </li>
+            <li>
+                Library
+            </li>
+            </ul>
+        </footer>
 
     </div>
 </body>
