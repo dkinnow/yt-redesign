@@ -3,12 +3,12 @@
 body,
 * {
   background: #ffffff;
-  margin: 0;
+  margin: 0px auto;
   font-family: "Mulish";
 }
 
 .wrapper {
-  width: 288px;
+  width: 100%;
   padding: 0.75em 1em 0em 1em;
   background: rgb(255, 255, 255);
 }
@@ -22,7 +22,8 @@ body,
 
 
   .logo-wrap {
-    width: 116px;
+    margin:0px;
+    //width: 116px;
     height: 30px;
   }
 
@@ -31,8 +32,8 @@ body,
   }
 
   .header-right {
-    width: 73px;
     height: 25px;
+    margin: 0px;
     display: flex;
     place-content: space-between;
     align-items: center;
@@ -42,7 +43,7 @@ body,
     border: none;
     background: url("../assets/icons/search.svg") no-repeat;
     background-size: cover;
-    width: 19px;
+    //width: 19px;
     height: 19px;
     cursor: pointer;
   }
