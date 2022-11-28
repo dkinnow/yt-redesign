@@ -3,27 +3,51 @@
 body,
 * {
   background: #ffffff;
-  margin: 0px auto;
+  margin: 0 auto;
   font-family: "Mulish";
 }
 
 .wrapper {
   width: 100%;
-  padding: 0.75em 1em 0em 1em;
+  //padding: 0.75em 1em 0em 1em;
+  display:flex;
+  min-height:100%;
+  flex-direction: column;
   background: rgb(255, 255, 255);
 }
 
+.container {
+  max-width: 1200px;
+  background: orange;
+}
+
+@media (max-width:1200px){
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width:992px){
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width:767px){
+  .container {
+    max-width: none;
+  }
+}
+
 .header {
-  display: flex;
+ display: flex;
   flex-direction: row;
   place-content: space-between;
   justify-content: space-between;
-  margin-bottom: 1em;
+  margin-top: 1em;
 
+  margin-bottom: 1.8em;
 
   .logo-wrap {
     margin:0px;
-    //width: 116px;
     height: 30px;
   }
 
@@ -43,18 +67,18 @@ body,
     border: none;
     background: url("../assets/icons/search.svg") no-repeat;
     background-size: cover;
-    //width: 19px;
     height: 19px;
     cursor: pointer;
   }
 
   .avatar-button {
-    padding-left: 0.08em;
+//    padding-left: 0.08em;
     border: none;
     background: url("../assets/img/avatar.png") no-repeat;
     border-radius: 50%;
     width: 30px;
     height: 30px;
+
     background-size: cover;
     cursor: pointer;
   }
@@ -67,25 +91,25 @@ body,
     height: 100%;
     list-style-type: none;
 
-    li:first-child {
-      margin: 1.1em 0 1.9em 0;
-      height: 198px;
-    }
+   // li:first-child {
+      //margin: 1.1em 0 1.9em 0;
+      //height: 198px;
+   // }
   }
 
   h2 {
-    margin-top: 0.6em;
+    //margin-top: 0.6em;
     font-size: 16px;
     font-weight: 700;
   }
 
   .video-item {
-    margin: 1em 0 2em 0;
-    height: 198px;
+    //margin: 1em 0 2em 0;
+    //height: 198px;
 
 
   .video-desc {
-      margin-top: 0.3em;
+      //margin-top: 0.3em;
       display: flex;
       place-content: space-between;
 
@@ -110,18 +134,13 @@ body,
 
     .time {
       position: absolute;
-
       margin-top: -38px;
       margin-left: 230px;
       padding: 3px 10px 3px 10px;
-
       color: #ffffff;
       background: rgba(0,0,0,0.3);
-      //border: 1px black solid;
-
       border-radius: 12px;
       font-size: 14px;
-
     }
 
     img {
@@ -139,15 +158,15 @@ body,
   //padding: 0px 0px 0px 3px;
   padding-left: 0px;
   font-size: 10px;
-  width: 288px;
+  //width: 288px;
   color: #898989;
   list-style-type: none;
   margin-bottom: 1em;
-  
+
   li {
     padding-left: 0px;
-    width: 45px;
-    height: 35px;
+
+
     display: flex;
     flex-direction: column;
     align-items: center;
