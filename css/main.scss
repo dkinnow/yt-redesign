@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
 
+$base-color: #FFFFFF;
+
 body,
 * {
-  background: #ffffff;
+  background: $base-color;
   margin: 0 auto;
   font-family: "Mulish";
 }
@@ -13,12 +15,14 @@ body,
   display:flex;
   min-height:100%;
   flex-direction: column;
-  background: rgb(255, 255, 255);
+  background: $base-color;
+  background: rgb(1, 228, 228);
 }
 
 .container {
   max-width: 1200px;
   background: orange;
+  padding: 0px 15px;
 }
 
 @media (max-width:1200px){
@@ -38,13 +42,12 @@ body,
 }
 
 .header {
- display: flex;
+  display: flex;
   flex-direction: row;
   place-content: space-between;
   justify-content: space-between;
-  margin-top: 1em;
-
-  margin-bottom: 1.8em;
+  margin: 0.75em 0em 0em 0em;
+  margin-bottom: 1.1em;
 
   .logo-wrap {
     margin:0px;
@@ -61,6 +64,7 @@ body,
     display: flex;
     place-content: space-between;
     align-items: center;
+    width: 6em;
   }
 
   .search-button {
@@ -69,18 +73,19 @@ body,
     background-size: cover;
     height: 19px;
     cursor: pointer;
+    width:1.5em;
   }
 
   .avatar-button {
-//    padding-left: 0.08em;
     border: none;
     background: url("../assets/img/avatar.png") no-repeat;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
-
+    margin: 0px;
+    width: 2.3em;
+    height: 2.3em;
     background-size: cover;
     cursor: pointer;
+    //background:#22ff22;
   }
 }
 
@@ -91,21 +96,18 @@ body,
     height: 100%;
     list-style-type: none;
 
-   // li:first-child {
-      //margin: 1.1em 0 1.9em 0;
-      //height: 198px;
-   // }
+     li:first-child {
+      margin-bottom: 8px;
+     }
   }
 
   h2 {
-    //margin-top: 0.6em;
     font-size: 16px;
     font-weight: 700;
   }
 
   .video-item {
-    //margin: 1em 0 2em 0;
-    //height: 198px;
+    margin: 1em 0 2em 0;
 
 
   .video-desc {
@@ -125,8 +127,8 @@ body,
 
   .home-video {
     width: 100%;
-    margin-bottom: 8px;
-    height: 150px;
+
+    //height: 150px;
 
     .video-thumb {
       z-index: -999;
